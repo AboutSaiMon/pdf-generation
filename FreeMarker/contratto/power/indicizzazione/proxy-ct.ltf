@@ -1,0 +1,22 @@
+\noindent \textbf{Indicizzazione prezzo:}\\
+
+\noindent EDISON ENERGIA ricalcolerà e fatturerà mensilmente i Prezzi contrattualizzati nell'Offerta (P0Fi) secondo la seguente formula:
+
+\[
+	P_{mFi} = P_{0Fi} + (I_m - I_0)
+\]
+
+\noindent dove:\\
+
+\begin{description}
+	\item[$m$:] indica il mese di prelievo dell’energia elettrica;
+	\item[$F_i$:] indica le fasce orarie come precedentemente definite;
+	\item[$P_m F_i$:] è il prezzo applicato ad ogni kWh prelevato in ciascuna fascia oraria ``Fi'' nel mese di prelievo ``$m$'';
+	\item[$P_0 F_i$:] è il prezzo contrattualizzato nell'Offerta per ogni kWh prelevato in ciascuna fascia oraria ``$F_i$'';
+	\item[$I_m$:] valore applicato al mese di prelievo ``$m$”, è pari a $\frac{10 + 0.167 \times (LSFO_m) + 0.234 \times (Brent_m)}{10}$ ed aggiornato trimestralmente nei mesi di gennaio, aprile, luglio e ottobre per la applicazione rispettivamente ai trimestri gennaio-marzo, aprile-giugno, luglio-settembre e ottobre-dicembre;
+	\item[$I_0$:] è l'indice di riferimento (I0) riportato nell'Offerta;
+	\item[$LSFO_m$:] è la media aritmetica dei valori dal settimo al secondo mese antecedenti il mese di prelievo, delle quotazioni mensili del Mid 1\% Low Sulphur Fuel Oil NWE FOB Cargoes espresse in \$/ton e trasformati in \euro/ton considerando la media aritmetica dei valori dal settimo al secondo mese antecedenti il mese di prelievo del cambio euro/dollaro rilevato della Banca Centrale Europea. Le quotazioni mensili dell’LSFO sono pari alla media aritmetica delle quotazioni giornaliere del Mid 1\% Low Sulphur Fuel Oil NWE Fob Cargo, pubblicate su Platt's European Marketscan, espresse in dollari per tonnellata metrica;
+	\item[$BRENT_m$:] è la media aritmetica dei valori dal settimo al secondo mese antecedenti il mese di prelievo, delle quotazioni mensili del Brent quotato all'Intercontinental Exchange di Londra espresse in \$/Barile e trasformati in \euro/Barile considerando la media aritmetica dei valori dal settimo al secondo mese antecedenti il mese di prelievo del cambio euro/dollaro rilevato della Banca Centrale Europea. Le quotazioni mensili del Brent sono pari alla media aritmetica dei prezzi di chiusura del Contratto Future ICE Brent (già IPE Brent) - prima scadenza (tranne nel giorno di scadenza di quest'ultimo, giorno nel quale si considera il prezzo di chiusura del contratto con seconda scadenza) quotati all'Intercontinental Exchange di Londra, espressi in dollari per barile.
+\end{description}
+
+\noindent Nel caso di cessata pubblicazione dei citati parametri saranno individuati, di comune accordo tra le PARTI, criteri alternativi equivalenti.

@@ -1,0 +1,69 @@
+\documentclass[a4paper,8pt,notitlepage]{article}%
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{eurosym}
+
+
+\begin{document}
+
+\begin{center}
+	\large \textbf{CONTRATTO PER LA SOMMINISTRAZIONE DI ENERGIA ELETTRICA}
+\end{center}
+
+\begin{center}
+	\footnotesize \textbf{TRA}
+\end{center}
+
+\noindent Edison Energia S.p.A., società a socio unico - soggetta all'attività di direzione e coordinamento di Edison S.p.A., con sede legale in Milano, Foro Buonaparte 31, capitale sociale di Euro 22.000.000, i.v., iscritta nel Registro delle Imprese di Milano e Codice Fiscale n. 08526440154, rappresentata da Alessandro Zunino in qualità di Amministratore Delegato (di seguito EDISON ENERGIA o FORNITORE)
+
+\begin{center}
+	\footnotesize \textbf{E}
+\end{center}
+
+<#if tipoCliente == "individuale">
+  <#include "/contratto/power/cliente/individuale.ltf" parse=false>
+<#elseif tipoCliente == "consorzio">
+  <#include "/contratto/power/cliente/consorzio.ltf" parse=false>
+<#elseif tipoCliente == "gruppo">
+  <#include "/contratto/power/cliente/gruppo.ltf" parse=false>
+</#if>
+
+\noindent EDISON ENERGIA e il CLIENTE saranno di seguito denominati singolarmente PARTE e congiuntamente PARTI.
+
+\begin{center}
+	\footnotesize \textbf{STIPULANO}
+\end{center}
+
+\noindent le Condizioni Particolari e Generali per la somministrazione di energia elettrica presso tutti i Punti di Prelievo, di cui all'``Offerta Edison Energia per la somministrazione di energia elettrica'' qui di seguito allegata (sub Allegato 1).\\
+
+\noindent Il CLIENTE dichiara di conoscere e di accettare tutte le disposizioni che regolano la somministrazione di energia elettrica a norma delle ``Condizioni Generali di Contratto'', che siglate dal CLIENTE e da EDISON ENERGIA costituiscono parte integrante ed inscindibile del presente CONTRATTO.
+\\\\
+\begin{center}
+	\textbf{CONDIZIONI PARTICOLARI DI FORNITURA}
+\end{center}
+
+\noindent \\ \textbf{\textit{PREZZO}}\\
+
+<#if fascia == "mono">
+  <#include "/contratto/power/fascia/mono.ltf" parse=false>
+<#elseif fascia == "pop">
+  <#include "/contratto/power/fascia/pop.ltf" parse=false>
+<#elseif fascia == "fa">
+  <#include "/contratto/power/fascia/fa.ltf" parse=false>
+<#elseif fascia == "oraria">
+  <#include "/contratto/power/fascia/oraria.ltf" parse=false>
+</#if>
+
+<#if illuminazionePubblica == "si">
+	<#include "/contratto/power/illuminazionePubblica.ltf" parse=false>
+</#if>
+
+\end{document}
