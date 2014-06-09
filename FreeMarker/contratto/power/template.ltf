@@ -1,7 +1,7 @@
-\documentclass[a4paper,8pt,notitlepage]{article}%
+\documentclass[a4paper,8pt,notitlepage]{article}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -10,7 +10,6 @@
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{eurosym}
-
 
 \begin{document}
 
@@ -35,7 +34,7 @@
 <#elseif tipoCliente == "gruppo">
   <#include "/contratto/power/cliente/gruppo.ltf" parse=false>
 </#if>
-
+\\
 \noindent EDISON ENERGIA e il CLIENTE saranno di seguito denominati singolarmente PARTE e congiuntamente PARTI.
 
 \begin{center}
